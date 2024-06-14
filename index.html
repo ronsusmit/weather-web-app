@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="outer">
+        <div class="search">
+            <form action="" class="form">
+                <input id="search" type="text" placeholder="Location">
+                <button id="button" type="button">Search</button>
+            </form>
+        </div>
+        <div class="container">
+            <div id="today-weather" class="output">
+                <div class="location">
+                    <p id="city-name"></p>
+                </div>
+                <div class="weather-info">
+                    <div class="temperature">
+                        <p id="today-temp"></p>
+                        <p class="feels-like" id="today-feels-like"></p>
+                    </div>
+                    <div class="additional-info">
+                        <p id="today-wind"></p>
+                        <p id="today-humidity"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="upcoming-weather" class="output">
+                <div class="heading">
+                    <h2>Upcoming Days</h2>
+                </div>
+                <div id="days" class="days"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
